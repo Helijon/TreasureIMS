@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDEX</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="header">
+        
+        <a class="title" href="index.html">
+            <img src="SYSTEM LOGO.png">
+            <h2>Treasure IMS</h2>
+        </a>
+        <div class="navbar">
+            <ul>
+                <li>   
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="login/login.html">LOGIN</a>
+                </li>
+                <li>
+                    <a href="login/login.html">DASHBOARD</a>
+                </li>
+                <li>
+                    <a href="index.html">ABOUT US</a>
+                </li>
+                <li>
+                    <a href="index.html">SOCIAL</a>
+                </li>
+            </ul>
+            
+        </div>
+        <div class="searchbar">
+            <div class="searchbarInputContainer">
+                <img src="searchIcon.png">
+                <input placeholder="Click to search here">
+            </div>
+        </div>
+    </header>
+
+    <script>
+        var slideNo = parseInt(1)
+
+        function leftSlide(){
+            slideNo -= 1
+            
+            if(slideNo >= 4){
+                slideNo = 1
+            }else if(slideNo <= 0){
+                slideNo = 3
+            }
+
+            updatebg()
+            document.getElementById("output").innerHTML = slideNo
+        }
+
+        function rightSlide(){
+
+            slideNo += 1
+
+            if(slideNo >= 4){
+                slideNo = 1
+            }else if(slideNo <= 0){
+                slideNo = 3
+            }
+
+            updatebg()
+            document.getElementById("output").innerHTML = slideNo
+        }
+
+        function updatebg(){
+            if(slideNo == 1){
+            document.getElementById("slide").style.backgroundImage = 'url(img1.jpg)';
+        }else if(slideNo == 2){
+            document.getElementById("slide").style.backgroundImage = 'url(img2.jpg)';
+        }else if(slideNo == 3){
+            document.getElementById("slide").style.backgroundImage = 'url("img3.jpg")';
+        }
+    }
+
+    setInterval(rightSlide, 4000)
+    </script>
+   <style>
+    .body{
+        background-image: url(img1.jpg);
+    }
+   </style>
+    <div class="slidecontainer" id="slide">
+        <div class="slideButtonContainer">
+            <div class="leftSlide" onclick="leftSlide()">
+                <p><</p>
+            </div>
+            <div class="rightSlide" onclick="rightSlide()">
+                <p>></p>
+            </div>
+        </div>
+        <div class="loginButton">
+
+            <a class="loginButtonText" href="login/login.html">LOGIN</a>
+        </div>
+    </div>
+
+    <div class="edge"></div>
+
+    <section class="introduction">
+        <img src="SYSTEM LOGO.png">
+        <h2>WELCOME TO <br> INVENTORY MANAGEMENT SYSTEM</h3>
+        <p> Manage your inventory with ease using our cutting-edge system. Track, organize, and optimize your inventory processes for maximum efficiency. Our platform is tailored to meet the needs of businesses of all sizes.
+        </p>
+        
+    </section>
+
+    
+
+    <section class="gallery">
+        <div class="galleryContainer">
+            <div class="galleryFormat">
+                <div class="galleryImgCrop">
+                    <img src="img1.jpg">
+                </div>
+                <h3>Real-Time Monitoring</h3>
+                <p>Track your inventory in real time, ensuring accurate data and immediate updates.</p>
+            </div>
+            <div class="galleryFormat">
+                <div class="galleryImgCrop">
+                    <img src="img2.jpg">
+                </div>
+                <h3>Comprehensive Analytics</h3>
+                <p>Gain valuable insights with detailed reports and analytics tailored to your needs."</p>
+            </div>
+            <div class="galleryFormat">
+                <div class="galleryImgCrop">
+                    <img src="img3.jpg">
+                </div>
+                <h3>User-Friendly Interface</h3>
+                <p>Our system is intuitive and easy to navigate, minimizing training time.</p>
+            </div>
+            <div class="galleryFormat">
+                <div class="galleryImgCrop">
+                    <img src="img1.jpg">
+                </div>
+                <h3>Customizable Features</h3>
+                <p>Customize the platform to suit your unique business requirements."</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="socialsContainer">
+        <p>Visit us on our social media pages!</p>
+        <div class="socials">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </div>
+    </div>
+
+
+    <div class="videocontainer">
+        <div class="darken">
+        <div class="videocontentcontainer">
+            <iframe class="video" src="https://www.youtube.com/embed/0NOER-Lle-0?si=f0YUzQbwg--YgETS"></iframe>
+            <div class="videotext">
+                <h2>Discover the Power of Our System</h1>
+                <p>Watch this short video to learn how our Inventory Management System 
+                    can transform the way you manage your business. See key features 
+                    in action and hear from satisfied users</p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.
+        1463044639745!2d124.1523808617928!3d8.581928560846178!2m3!1f0!2f0!3f0!3m
+        2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32fff2e7ff6d2ec9%3A0x180566d5585d5301!
+        2sCapitol%20University!5e0!3m2!1sen!2sph!4v1731585345435!5m2!1sen!2sph">
+    </iframe>
+
+    <footer class="footer">
+        <div class="footerContent">
+            <p>Our mission is to empower businesses with a reliable and 
+                efficient inventory management solution. With our system, 
+                you can focus on growing your business while we handle the
+                 logistics</p>
+            <p>We prioritize security and accuracy, ensuring your data is 
+                always safe and up-to-date.</p>
+            <p>Contact us anytime for support. Our team is here to help 
+                you every step of the way.</p>
+            <p>Thank you for choosing our Inventory Management System. 
+                We look forward to being your trusted partner in business.</p>
+        </div>
+    </footer>
+    <div class="tag">
+        <p>CODED BY ARCENO</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,377 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* border: 1px solid ; */
+}
+body{
+    background-color: rgb(31, 31, 31);
+    width: 100%;
+    overflow-x: hidden;
+    animation: fadeInAnimation ease 3s;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+.header{
+    width: 100%;
+    height: 64px;
+    background-color: rgb(38, 38, 38);
+    position: sticky;
+    top: 0px;
+    display: flex;
+    z-index: 5;
+    box-shadow: 10px 0px 10px black;
+
+}
+a{
+    text-decoration: none;
+}
+
+
+
+
+.title{
+    width: 30%;
+    display: flex;
+    align-content: center;
+}
+.title img{
+    height: 64px;
+    padding-left: 16px;
+}
+.title h2{
+    align-content: center;
+    padding-left: 16px;
+}
+
+
+
+.navbar{
+    align-content: center;
+    width: 40%;
+}
+.navbar ul{
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+}
+.navbar ul li{
+    list-style-type: none;
+}
+.navbar ul li a{
+    text-decoration: none;
+}
+.navbar ul li a:hover{
+    color:  rgb(255, 144, 00);
+}
+
+
+
+.searchbar{
+    align-content: center;
+    width: 30%
+}
+.searchbarInputContainer{
+    float: right;
+    background-color: white;
+    padding: 8px;
+    border-radius: 16px;
+    width: 200px;
+    margin-right: 16px;
+    display: flex;
+}
+.searchbarInputContainer img{
+    width: 20px;
+}
+.searchbarInputContainer input{
+    border: none;
+    width: 100%;
+    color: black;
+    margin-left: 10px;
+}
+
+
+.slidecontainer{
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    background-image: url("img4.jpg");
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 0px -30px 50px black;
+    transition: background-image 1s ease-in-out;
+}
+.slideButtonContainer{
+    display: flex;
+    width: 100%;
+    margin-top: 306px;
+    justify-content: space-between;
+}
+.leftSlide, .rightSlide{
+    height: 100px;
+    width: 50px;
+    opacity: 50%;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: xx-large;
+    font-weight: 900;
+
+}
+.leftSlide{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgb(255, 255, 255, 0));
+}
+.rightSlide{
+    background-image: linear-gradient(to left, rgb(0, 0, 0, 0.5), rgb(255, 255, 255, 0));
+}
+
+.loginButton{
+    width: 200px ;
+    height: 50px;
+    background-color: rgb(38, 38, 38);
+    margin: auto;
+    margin-top: 256px;
+    border-radius: 30px;
+    text-align: center;
+    align-content: center;
+    border: 1px solid rgb(18, 18, 18);
+}
+.loginButtonText{
+    text-decoration: none;
+    font-size: x-large;
+    font-family: Andale Mono, monospace;
+    padding: 10px 64px 10px 64px;
+}
+.loginButton:hover{
+    border-color: rgb(255, 144, 00);
+}
+.loginButtonText:hover{
+    color: rgb(255, 144, 00);
+}
+
+
+
+.edge{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(31, 31, 31);
+    border-radius: 100%;
+    position: relative;
+    bottom: 70px;
+    box-shadow: 0px -10px 10px rgb(0, 0, 0, 0.2);
+}
+.introduction{
+    width: 90%;
+    height: 512px;
+    margin: auto;
+    text-align: center;
+    font-size: x-large;
+    bottom: 50px;
+}
+.introduction img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+.introduction h1{
+    margin-top: 32px;
+}
+.introduction p{
+    width: 60%;
+    margin: auto;
+    margin-top: 32px;
+}
+
+
+
+.gallery{
+    margin: auto;
+    width: 70%;
+    
+}
+.galleryContainer{
+    width: 100%;
+    margin-top: 64px;
+    display: flex;
+    gap: 32px;
+    margin-left: 20;
+}
+.galleryFormat{
+    background-color: rgb(38, 38, 38);
+    height: 256px;
+    padding: 32px;
+    border-radius: 5px;
+    width: 25%;
+    box-shadow: 5px 5px 10px rgb(15, 15, 15);
+}
+.galleryImgCrop{
+    width: 100%;
+    height: 75px;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+.galleryImgCrop img{
+    width: 100%;
+}
+
+
+
+.videocontainer{
+    width: 100%;
+    height: 512px;
+    background: url("img1.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-top: 128px;
+    align-content: center;
+}
+.darken{
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.videocontentcontainer{
+    width: 60%;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    gap: 64px;
+}
+.video{
+    width: 50%;
+}
+.videotext{
+    text-align: justify;
+    width: 50%;
+    text-shadow: 2px 2px 2px black;
+}
+.videotext h2{
+    margin-top: 16px;
+    
+}
+.videotext p{
+    padding: 16px;
+}
+
+
+
+.socialsContainer{
+    margin-top: 128px;
+    text-align: center;
+}
+.socialsContainer P{
+    margin-bottom: 16px;
+}
+.socials{
+
+    width: 200px;
+    display: flex;
+    margin: auto;
+}
+.socials a{
+    text-decoration: none;
+    margin: auto;
+    font-size: xx-large;
+}
+.socials a:hover{
+    color: rgb(255, 144, 00);
+}
+
+
+
+.map{
+    width: 100%;
+    height: 512px;
+
+}
+.tag{
+    height: 64px;
+    width: 100%;
+    background-color: rgb(86, 86, 86);
+    text-align: center;
+    align-content: center;
+}
+
+
+
+.footer{
+    width: 100%;
+    height: 100%px;
+    background-color: rgb(52, 52, 52);
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+.footerContent{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    gap: 32px;
+}
+.footerContent p{
+    width: 25%;
+    text-align: justify;
+}
+
+
+
+
+
+
+.loginContainer{
+    width: 448px;
+    height: 448px;
+    background-color: rgb(41, 41, 41);
+    border-radius:16px;
+    margin: auto;
+    margin-top: 128px;
+    text-align: center;
+    padding: 64px;
+}
+.loginTitle{
+    font-size: 25px;
+}
+.loginTitle::first-line{
+    font-size: 52px;
+}
+.loginFormContainer{
+    margin-top: 64px;
+}
+
+.loginInputForm{
+    margin-top: 16px;
+}
+.loginInputForm p{
+    text-align: left;
+    color: rgb(255, 144, 00);
+    margin-bottom: 4px;
+}
+.loginInputForm input{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    color: black;
+}
+.loginFooter{
+    margin-top: 32px;
+}
+.loginFormButtonContainer{
+    margin-top: 32px;
+    display: inline-flex;
+    gap: 16px;
+}
+.loginFormLogin, .loginformSignUp{
+    background-color: rgb(31, 31, 31);
+    padding: 16px;
+    border-radius: 16px;
+}

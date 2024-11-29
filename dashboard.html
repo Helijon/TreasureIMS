@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASHBOARD</title>
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <header class="header">
+        
+        <a class="title" href="../index.html">
+            <img src="../SYSTEM LOGO.png">
+            <h2>Treasure IMS</h2>
+        </a>
+        <div class="navbar">
+            <ul>
+                <li>   
+                    <a href="../index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="../login/login.html">LOGIN</a>
+                </li>
+                <li>
+                    <a href="../login/login.html">DASHBOARD</a>
+                </li>
+                <li>
+                    <a href="../index.html">ABOUT US</a>
+                </li>
+                <li>
+                    <a href="../index.html">SOCIAL</a>
+                </li>
+            </ul>
+            
+        </div>
+        <div class="searchbar">
+            <div class="searchbarInputContainer">
+                <img src="../searchIcon.png">
+                <input placeholder="Click to search here">
+            </div>
+        </div>
+    </header>
+
+    <div class="dashboardContainer">
+        <div class="leftContainer">
+            <div class="userContainer">
+                <div class="userContentContainer">
+                    <div class="userProfile">
+                        <img src="profile.jpg">
+                    </div>
+                    <div class="userProfileInfo">
+                        <h3>Helijon Arceno</h3>
+                        <p>ADMINISTRATOR</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebarContainer">
+                <button>Dashboard</button>
+                <button>Point of Sale</button>
+                <button>Inventory</button>
+                <button>Statistics</button>
+                <button>History</button>
+                <button>Recent Activity</button>
+                <button class="sidebarExit">EXIT</button>
+                <a class="sidebarLogo" href="../index.html">
+                    <img src="../SYSTEM LOGO.png">
+                </a>
+            </div>
+        </div>
+        <div class="rightContainer">
+            <h2>DASHBOARD</h2>
+            <div class="contentContainer">
+                <div class="contentLeftContainer">
+                    <!-- BOX 1 MONTHLY PRODUCT SALES-->
+                    <div class="topLeftContainer"> 
+                        <h3>Monthly Product Sales</h3>
+                        <div class="topLeftContentContainer contentContainerFormat">
+                                <div class="lineGraphContainer">
+                                    <img src="graph1.png" alt="lineGraph">
+                                </div>
+                                <hr>
+                                <div class="pieGraphContainer">
+                                    <div class="pieGraphLeft">
+                                        <h3>TOP PRODUCTS THIS MONTH</h3>
+                                        <uL>
+                                            <li>
+                                                <p>Product: MAT001</p>
+                                            </li>
+                                            <li>
+                                                <p>Product: PNT001</p>
+                                            </li>
+                                            <li>
+                                                <p>Product: CMT001</p>
+                                            </li>
+                                            <li>
+                                                <p>Product: BAT001</p>
+                                            </li>
+                                            <li>
+                                                <P>Product: MED005</P>
+                                            </li>
+                                        </uL>
+                                    </div>
+                                    <div class="pieGraphRight">
+                                        <img src="graph2.png" alt="lineGraph">
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <!-- BOX 2  SEARCHBAR-->
+                    <div class="bottomLeftContainer">
+                        <h3>Searchbar</h3>
+                        
+                        <div class="bottomLeftContentContainer">
+                            
+                            <div class="dashboardSearchbarContainer contentContainerFormat">
+                                <img src="../searchIcon.png">
+                                <input placeholder="   Search product here...">
+                            </div>
+
+                            <div class="searchbarResultsParentContainer contentContainerFormat">
+                            <div class="searchbarResultsContainer">
+                                <div class="resultsInfoContainer">
+                                    <h3>Product 182736</h3>
+                                    <p>Silka Sun Silk - QTY: 20</p>
+                                </div>
+                                <button class="resultsShowMore">SHOW MORE</button>
+                            </div>
+                            <hr>
+                            <div class="searchbarResultsContainer">
+                                <div class="resultsInfoContainer">
+                                    <h3>Product 112336</h3>
+                                    <p>Silka Sun Silk - QTY: 20</p>
+                                </div>
+                                <button class="resultsShowMore">SHOW MORE</button>
+                            </div>
+                            <hr>
+                            <div class="searchbarResultsContainer">
+                                <div class="resultsInfoContainer">
+                                    <h3>Product 115236</h3>
+                                    <p>Silka Sun Silk - QTY: 20</p>
+                                </div>
+                                <button class="resultsShowMore">SHOW MORE</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contentRightContainer">
+                    <div class="topRightContainer">
+                        <!-- BOX 3 EXPIRY TRACKING-->
+                        <div class="topRightLeftContainer" >
+                            <h3> Tracking</h3>
+                            <div class="topRightLeftContentContainer contentContainerFormat">
+                                <div class="trackingContent">
+                                    <div>
+                                        <h3>1. Product: BAT001</h3>
+                                        <p>Lithium Battery</p>
+                                    </div>
+                                    <p>Expires in 1 day/s</p>
+                                </div>
+                                <hr>
+                                <div class="trackingContent">
+                                    <div>
+                                        <h3>2. Product: 202002</h3>
+                                        <p>Adhesive Glue</p>
+                                    </div>
+                                    <p>Expires in 1 day/s</p>
+                                </div>
+                                <hr>
+                                <div class="trackingContent">
+                                    <div>
+                                    <h3>3. Product: SAF002</h3>
+                                    <p>Fire Extinguisher</p>
+                                    </div>
+                                    <p>Expires in 2 day/s</p>
+                                </div>
+                                <hr>
+                                <div class="trackingContent">
+                                    <div>
+                                    <h3>4. Product: FIL009</h3>
+                                    <p>Charcoal Filters</p>
+                                    </div>
+                                    <p>Expires in 3 day/s</p>
+                                </div>
+                                <hr>
+                                <div class="trackingContent">
+                                    <div>
+                                    <h3>5. Product: MED005</h3>
+                                    <p>Medical Bandages</p>
+                                    </div>
+                                    <p>Expires in 5 day/s</p>
+                                </div>
+                                <hr>
+                                <div class="trackingContent">
+                                    <div>
+                                    <h3>6. Product: AGR008</h3>
+                                    <p>Fertilizers</p>
+                                    </div>
+                                    <p>Expires in 7 day/s</p>
+                                </div>
+                                <hr>
+
+                            </div>
+                        </div>
+                        <!-- BOX 4 -->
+                        <div class="topRightRightContainer">
+                            <h3>Stock Alert</h3>
+                            <div class="topRightRightContentContainer contentContainerFormat">
+                                <div class="trackingContent">
+                                    <div>
+                                        <h3>1. Product: MAT001</h3>
+                                        <p>Polyurethane Adhesive</p>
+                                    </div>
+                                    <p>Supply: 1 pcs.</p>
+                                </div>
+                                <hr>
+                                <div class="trackingContent">
+                                    <div>
+                                        <h3>2. Product: MAT256</h3>
+                                        <p>Epoxy Resin</p>
+                                    </div>
+                                    <p>Supply: 3 pcs.</p>
+                                </div>
+                                <hr>
+                                <div class="trackingContent">
+                                    <div>
+                                    <h3>3. Product: MAT089</h3>
+                                    <p>Silicone Caulk</p>
+                                    </div>
+                                    <p>Supply: 5 pcs.</p>
+                                </div>
+                                <hr>
+                                <div class="trackingContent">
+                                    <div>
+                                    <h3>4. Product: PNT001</h3>
+                                    <p> White Acrylic Paint</p>
+                                    </div>
+                                    <p>Supply: 5 pcs.</p>
+                                </div>
+                                <hr>
+                                <div class="trackingContent">
+                                    <div>
+                                    <h3>5. Product: CMT001</h3>
+                                    <p>Contact Cement</p>
+                                    </div>
+                                    <p>Supply: 6pcs.</p>
+                                </div>
+                                <hr>
+                                <div class="trackingContent">
+                                    <div>
+                                    <h3>6. Product: MAT056</h3>
+                                    <p>Polyurethane Foam</p>
+                                    </div>
+                                    <p>Supply: 10pcs.</p>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- BOX5 -->
+                    <div class="bottomRightContainer">
+                        <h3>Recent Activity Logs</h3>
+                        <div class="bottomRightContentContainer contentContainerFormat">
+                            <p><strong>2024-11-28 09:45:12 AM</strong>	Admin - J. Santos	Added New Product	Product: Sun Silk Lotion 200ml (Product ID: 12345), Qty: 50</p>
+                            <p><strong>2024-11-28 10:03:45 AM</strong>	Staff - A. Villanueva	Updated Stock Level	Product: Detergent Powder 1kg (Product ID: 23456), Qty Added: 30</p>
+                            <P><strong>2024-11-28 10:15:22 AM</strong>	Admin - J. Santos	Deleted Product	Product: Expired Juice - Apple Delight (Product ID: 98765)</p>
+                            <p><strong>2024-11-28 01:05:30 PM</strong>	Staff - M. Garcia	Processed Return	Product: Shampoo 250ml (Product ID: 78901), Qty: 2, Reason: Defective</p>
+                            <p><strong>2024-11-28 05:15:23 PM</strong>	Staff - M. Garcia	Updated Product Category	Product: Instant Noodles Chicken Flavor (Product ID: 55678), New Category: Dry Goods</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

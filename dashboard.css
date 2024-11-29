@@ -1,0 +1,352 @@
+.dashboardContainer{
+    margin-top: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+    display: flex;
+    gap: 16px;
+}
+.leftContainer{
+    width: 20%;
+    height: 850px;
+}
+.userContainer{
+    width: 100%;
+    height: 128px;
+    background-color: rgb(41, 41, 41);
+    margin-bottom: 16px;
+    border-radius: 16px;
+    align-content: center;
+}
+.userContentContainer{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    gap: 16px;
+}
+.userProfile{
+    overflow: hidden;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+}
+.userProfile img{
+    width: 100%;
+}
+.userProfileInfo{
+    width: 60%;
+}
+
+
+
+.sidebarContainer{
+    height: 674px;
+    width: 100%;
+    background-color: rgb(41, 41, 41);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    padding-top: 32px;
+}
+.sidebarContainer button{
+    width: 80%;
+    height: 50px;
+    background-color: rgb(31, 31, 31);  
+    border-radius: 16px;
+    border-style: groove;
+    border-color: rgb(38, 38, 38);
+    font-size: large;
+}
+.sidebarExit{
+    background-color: rgb(255, 144, 00);
+}
+.sidebarContainer button:hover{
+    border-color: rgb(255, 144, 00);
+}
+.sidebarLogo{
+    width: 100px;
+    height: 200px;
+    align-content: center;
+}
+.sidebarLogo img{
+    width: 100%;
+    align-content: center;
+}
+
+.rightContainer{
+    width: 80%;
+    height: 850px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 16px;
+}   
+.rightContainer h2{    
+    margin-top: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+.contentContainer{
+    margin: auto;
+    width: 93%;
+    height: 725px;
+    background-color: rgb(86, 86, 86);
+    border-radius: 16px;
+    border: 3px solid rgb(123, 123, 123);
+    padding: 16px;
+    display: flex;
+    gap: 32px;
+}
+
+/* LEFT SECTION */
+.contentLeftContainer{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* BOX 1 */
+.topLeftContainer{
+    width: 100%;
+    height: 60%;
+}
+.topLeftContentContainer{
+    width: 100%;
+    height: 94%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.topLeftContentContainer hr{
+    border-color: black;
+}
+.lineGraphContainer{
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 4px;
+}
+.lineGraphContainer img{
+    width: 20%;
+    position: relative;
+    transform: scale(4);
+    top: 65px;
+}
+.pieGraphContainer{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    box-sizing: border-box;
+    padding: 4px;
+}
+.pieGraphLeft{
+    width: 50%;
+    height: 100%;
+    text-align: left;
+    padding-left: 32px;
+    align-content: center;
+}
+.pieGraphLeft h3{
+    margin-bottom: 8px;
+    color: rgb(66, 66, 66);
+}
+.pieGraphLeft ul{
+    list-style-type: decimal;
+    margin-left: 50px;
+}
+.pieGraphLeft ul li, .pieGraphLeft ul li p{
+    color: rgb(66, 66, 66);
+}
+.pieGraphRight{
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+.pieGraphRight img{
+    width: 100%;
+    height: 100%;
+}
+/* BOX 2 */
+.bottomLeftContainer{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.bottomLeftContentContainer{
+    width: 100%;
+    height: 90%;   
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.bottomLeftContentContainer hr{
+    border-color: black;
+}
+
+
+
+.dashboardSearchbarContainer{
+    height: 20%; 
+    align-content: center;  
+    align-items: center;
+    display: flex;
+    margin-bottom: 16px;
+    box-sizing: border-box; 
+    padding: 8px;
+}
+.dashboardSearchbarContainer img{
+    padding: 4px;
+    padding-left: 8px;
+    width: 24px;
+    height: 24px;
+}
+.dashboardSearchbarContainer input{
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    margin-left: 4px;
+    margin-right: 16px;
+    color: rgb(0, 0, 0);
+    padding: 4px;
+    border: 1px solid rgb(204, 204, 204);
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+
+
+.searchbarResultsParentContainer{
+    height: 75%;
+}
+.searchbarResultsContainer{
+    width: 100%;
+    height: 33%;
+    display: flex;
+}
+.resultsInfoContainer h3, .resultsInfoContainer p{
+    color: rgb(66, 66, 66);
+    text-align: left;
+    margin-left: 16px;
+}
+.resultsShowMore{ 
+    width: 55%;
+    height: 75%;
+    margin: auto;
+    background-color: rgb(31, 31, 31);  
+    border-radius: 16px;
+    border-style: groove;
+    border-color: rgb(38, 38, 38);
+    font-size: large; 
+}
+.resultsShowMore:hover{
+    border-color: rgb(255, 144, 00);
+}
+
+
+
+/* RIGHT SECTION */
+.contentRightContainer{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.topRightContainer{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    gap: 32px   ;
+}
+/* BOX 3 */
+.topRightLeftContainer{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.trackingContent{
+    width: 100%;
+    height: 15%;
+    box-sizing: border-box;
+    padding: 8px;
+    align-content: space-between;
+    align-self: center;
+    display: inline-flex;
+    gap: 16px   ;
+}
+.trackingContent h3, .trackingContent div p{
+    text-align: left;
+    color: rgb(66, 66, 66);
+}
+.trackingContent ~ hr{
+    border-color: black;
+}
+.trackingContent > p{
+    text-align: right;
+    color: rgb(66, 66, 66);
+    margin: auto;
+    background-color: rgb(255, 144, 00);
+    font-size: small;
+    border-radius: 16px;
+}
+.topRightLeftContentContainer{ 
+    width: 100%;
+    height: 100%;
+}
+
+/* BOX 4 */
+.topRightRightContainer{
+    width: 50%;
+    height: 100%;
+}
+
+.topRightRightContentContainer{
+    width: 100%;
+    height: 100%;
+}
+
+/* BOX 5 */
+.bottomRightContainer{
+    width: 100%;
+    height: 40%;
+}
+.bottomRightContentContainer{
+    width: 100%;
+    height: 90%;
+    box-sizing: border-box;
+    padding: 8px;
+    text-align: left;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.bottomRightContentContainer p{
+    color: rgb(31, 31, 31);
+}
+
+.topLeftContainer, 
+.bottomLeftContainer,
+.topRightLeftContainer,
+.topRightRightContainer,
+.bottomRightContainer{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.contentContainerFormat{
+    border: 1px solid black;
+    border-radius: 16px;
+    background-color: rgb(180, 180, 180);
+}
+.contentContainerFormat:hover{
+    background-color: rgb(214, 214, 214);
+}
